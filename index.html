@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Talisma Web Client</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ec1313",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221010",
+              "theme-blue": "#2684FC"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4">
+<div class="relative w-full max-w-lg overflow-hidden rounded-xl bg-white dark:bg-zinc-800 shadow-2xl flex flex-col group/design-root">
+<button class="absolute top-3 right-3 z-10 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-black/20 text-white transition-colors hover:bg-black/40">
+<span class="material-symbols-outlined" style="font-size: 20px;">close</span>
+</button>
+<div class="w-full flex flex-col justify-center items-center bg-gradient-to-b from-[#47aaff] to-[#1A6FDB] p-8 min-h-[160px]">
+<img class="w-24 h-24" data-alt="Talisma logo featuring a red sphere with a silver 'W' symbol inside" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLgI-t0mCjSjtNuy3PeehutS189a9c-kaNsthxBfR6dJ2VqS81dsnHMUHjQNTbbU3229XNphYszPMpsns2kanrpEPJGDnWbT1RpizuxgZr_kJbL591Nv-0-JTnBTrczYOqpzrGAAM0gnw-RfezCULCtD4fP-DHJC98QtwqNVr6jLplRVxY_z_D-P1fHWF-cGz9pQKK95fjNcOk2lnjQ7r2GgTfFXGOb3BH4kVz3rLZucINK70IZbH60881ctGiC3EbS2v-BqNJiQQ"/>
+</div>
+<div class="flex flex-col p-6 sm:p-8">
+<div class="flex flex-col gap-1 text-center">
+<p class="text-[#181111] dark:text-gray-100 tracking-light text-[28px] font-bold leading-tight">Talisma Web Client</p>
+<p class="text-[#896161] dark:text-gray-400 text-sm font-normal leading-normal">Version 10.2.1</p>
+</div>
+<p class="text-[#181111] dark:text-gray-200 text-base font-normal leading-relaxed text-center pt-6 pb-6">
+                    A brief, one or two-sentence mission statement or company tagline that communicates the value and purpose of the Talisma brand.
+                </p>
+<hr class="border-t border-gray-200 dark:border-gray-700"/>
+<p class="text-[#896161] dark:text-gray-500 text-sm font-normal leading-normal text-center pt-6">Copyright © 2024 Talisma Corporation. All rights reserved.</p>
+<div class="flex pt-8 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-6 flex-1 bg-theme-blue text-white gap-2.5 text-sm font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-opacity-90">
+<div class="text-white material-symbols-outlined" data-icon="Headset" data-size="20px" data-weight="regular">headset_mic</div>
+<span class="truncate">Contact Support</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
